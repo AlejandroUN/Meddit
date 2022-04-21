@@ -1,0 +1,86 @@
+C:\Users\juand\Documents\Semestre 6\Arquitectura\MS LDCS\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\juand\Documents\Semestre 6\Arquitectura\MS LDCS\bin\Debug\net6.0\appsettings.json
+C:\Users\juand\Documents\Semestre 6\Arquitectura\MS LDCS\bin\Debug\net6.0\Meddit_LDCS_ms.exe
+C:\Users\juand\Documents\Semestre 6\Arquitectura\MS LDCS\bin\Debug\net6.0\Meddit_LDCS_ms.deps.json
+C:\Users\juand\Documents\Semestre 6\Arquitectura\MS LDCS\bin\Debug\net6.0\Meddit_LDCS_ms.runtimeconfig.json
+C:\Users\juand\Documents\Semestre 6\Arquitectura\MS LDCS\bin\Debug\net6.0\Meddit_LDCS_ms.dll
+C:\Users\juand\Documents\Semestre 6\Arquitectura\MS LDCS\bin\Debug\net6.0\Meddit_LDCS_ms.pdb
+C:\Users\juand\Documents\Semestre 6\Arquitectura\MS LDCS\bin\Debug\net6.0\DnsClient.dll
+C:\Users\juand\Documents\Semestre 6\Arquitectura\MS LDCS\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\juand\Documents\Semestre 6\Arquitectura\MS LDCS\bin\Debug\net6.0\MongoDB.Bson.dll
+C:\Users\juand\Documents\Semestre 6\Arquitectura\MS LDCS\bin\Debug\net6.0\MongoDB.Driver.dll
+C:\Users\juand\Documents\Semestre 6\Arquitectura\MS LDCS\bin\Debug\net6.0\MongoDB.Driver.Core.dll
+C:\Users\juand\Documents\Semestre 6\Arquitectura\MS LDCS\bin\Debug\net6.0\MongoDB.Libmongocrypt.dll
+C:\Users\juand\Documents\Semestre 6\Arquitectura\MS LDCS\bin\Debug\net6.0\SharpCompress.dll
+C:\Users\juand\Documents\Semestre 6\Arquitectura\MS LDCS\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\juand\Documents\Semestre 6\Arquitectura\MS LDCS\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\juand\Documents\Semestre 6\Arquitectura\MS LDCS\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\juand\Documents\Semestre 6\Arquitectura\MS LDCS\bin\Debug\net6.0\runtimes\linux\native\libsnappy64.so
+C:\Users\juand\Documents\Semestre 6\Arquitectura\MS LDCS\bin\Debug\net6.0\runtimes\linux\native\libzstd.so
+C:\Users\juand\Documents\Semestre 6\Arquitectura\MS LDCS\bin\Debug\net6.0\runtimes\osx\native\libsnappy64.dylib
+C:\Users\juand\Documents\Semestre 6\Arquitectura\MS LDCS\bin\Debug\net6.0\runtimes\osx\native\libzstd.dylib
+C:\Users\juand\Documents\Semestre 6\Arquitectura\MS LDCS\bin\Debug\net6.0\runtimes\win\native\libzstd.dll
+C:\Users\juand\Documents\Semestre 6\Arquitectura\MS LDCS\bin\Debug\net6.0\runtimes\win\native\snappy32.dll
+C:\Users\juand\Documents\Semestre 6\Arquitectura\MS LDCS\bin\Debug\net6.0\runtimes\win\native\snappy64.dll
+C:\Users\juand\Documents\Semestre 6\Arquitectura\MS LDCS\bin\Debug\net6.0\runtimes\linux\native\libmongocrypt.so
+C:\Users\juand\Documents\Semestre 6\Arquitectura\MS LDCS\bin\Debug\net6.0\runtimes\osx\native\libmongocrypt.dylib
+C:\Users\juand\Documents\Semestre 6\Arquitectura\MS LDCS\bin\Debug\net6.0\runtimes\win\native\mongocrypt.dll
+C:\Users\juand\Documents\Semestre 6\Arquitectura\MS LDCS\obj\Debug\net6.0\Meddit_LDCS_ms.csproj.AssemblyReference.cache
+C:\Users\juand\Documents\Semestre 6\Arquitectura\MS LDCS\obj\Debug\net6.0\Meddit_LDCS_ms.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\juand\Documents\Semestre 6\Arquitectura\MS LDCS\obj\Debug\net6.0\Meddit_LDCS_ms.AssemblyInfoInputs.cache
+C:\Users\juand\Documents\Semestre 6\Arquitectura\MS LDCS\obj\Debug\net6.0\Meddit_LDCS_ms.AssemblyInfo.cs
+C:\Users\juand\Documents\Semestre 6\Arquitectura\MS LDCS\obj\Debug\net6.0\Meddit_LDCS_ms.csproj.CoreCompileInputs.cache
+C:\Users\juand\Documents\Semestre 6\Arquitectura\MS LDCS\obj\Debug\net6.0\Meddit_LDCS_ms.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\juand\Documents\Semestre 6\Arquitectura\MS LDCS\obj\Debug\net6.0\Meddit_LDCS_ms.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\juand\Documents\Semestre 6\Arquitectura\MS LDCS\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\juand\Documents\Semestre 6\Arquitectura\MS LDCS\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\juand\Documents\Semestre 6\Arquitectura\MS LDCS\obj\Debug\net6.0\scopedcss\bundle\Meddit_LDCS_ms.styles.css
+C:\Users\juand\Documents\Semestre 6\Arquitectura\MS LDCS\obj\Debug\net6.0\Meddit_LDCS_ms.csproj.CopyComplete
+C:\Users\juand\Documents\Semestre 6\Arquitectura\MS LDCS\obj\Debug\net6.0\Meddit_LDCS_ms.dll
+C:\Users\juand\Documents\Semestre 6\Arquitectura\MS LDCS\obj\Debug\net6.0\refint\Meddit_LDCS_ms.dll
+C:\Users\juand\Documents\Semestre 6\Arquitectura\MS LDCS\obj\Debug\net6.0\Meddit_LDCS_ms.pdb
+C:\Users\juand\Documents\Semestre 6\Arquitectura\MS LDCS\obj\Debug\net6.0\Meddit_LDCS_ms.genruntimeconfig.cache
+C:\Users\juand\Documents\Semestre 6\Arquitectura\MS LDCS\obj\Debug\net6.0\ref\Meddit_LDCS_ms.dll
+C:\Users\juand\Documents\Semestre 6\Arquitectura\Meddit_LDCS_ms\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\juand\Documents\Semestre 6\Arquitectura\Meddit_LDCS_ms\bin\Debug\net6.0\appsettings.json
+C:\Users\juand\Documents\Semestre 6\Arquitectura\Meddit_LDCS_ms\bin\Debug\net6.0\Meddit_LDCS_ms.exe
+C:\Users\juand\Documents\Semestre 6\Arquitectura\Meddit_LDCS_ms\bin\Debug\net6.0\Meddit_LDCS_ms.deps.json
+C:\Users\juand\Documents\Semestre 6\Arquitectura\Meddit_LDCS_ms\bin\Debug\net6.0\Meddit_LDCS_ms.runtimeconfig.json
+C:\Users\juand\Documents\Semestre 6\Arquitectura\Meddit_LDCS_ms\bin\Debug\net6.0\Meddit_LDCS_ms.dll
+C:\Users\juand\Documents\Semestre 6\Arquitectura\Meddit_LDCS_ms\bin\Debug\net6.0\Meddit_LDCS_ms.pdb
+C:\Users\juand\Documents\Semestre 6\Arquitectura\Meddit_LDCS_ms\bin\Debug\net6.0\DnsClient.dll
+C:\Users\juand\Documents\Semestre 6\Arquitectura\Meddit_LDCS_ms\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\juand\Documents\Semestre 6\Arquitectura\Meddit_LDCS_ms\bin\Debug\net6.0\MongoDB.Bson.dll
+C:\Users\juand\Documents\Semestre 6\Arquitectura\Meddit_LDCS_ms\bin\Debug\net6.0\MongoDB.Driver.dll
+C:\Users\juand\Documents\Semestre 6\Arquitectura\Meddit_LDCS_ms\bin\Debug\net6.0\MongoDB.Driver.Core.dll
+C:\Users\juand\Documents\Semestre 6\Arquitectura\Meddit_LDCS_ms\bin\Debug\net6.0\MongoDB.Libmongocrypt.dll
+C:\Users\juand\Documents\Semestre 6\Arquitectura\Meddit_LDCS_ms\bin\Debug\net6.0\SharpCompress.dll
+C:\Users\juand\Documents\Semestre 6\Arquitectura\Meddit_LDCS_ms\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\juand\Documents\Semestre 6\Arquitectura\Meddit_LDCS_ms\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\juand\Documents\Semestre 6\Arquitectura\Meddit_LDCS_ms\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\juand\Documents\Semestre 6\Arquitectura\Meddit_LDCS_ms\bin\Debug\net6.0\runtimes\linux\native\libsnappy64.so
+C:\Users\juand\Documents\Semestre 6\Arquitectura\Meddit_LDCS_ms\bin\Debug\net6.0\runtimes\linux\native\libzstd.so
+C:\Users\juand\Documents\Semestre 6\Arquitectura\Meddit_LDCS_ms\bin\Debug\net6.0\runtimes\osx\native\libsnappy64.dylib
+C:\Users\juand\Documents\Semestre 6\Arquitectura\Meddit_LDCS_ms\bin\Debug\net6.0\runtimes\osx\native\libzstd.dylib
+C:\Users\juand\Documents\Semestre 6\Arquitectura\Meddit_LDCS_ms\bin\Debug\net6.0\runtimes\win\native\libzstd.dll
+C:\Users\juand\Documents\Semestre 6\Arquitectura\Meddit_LDCS_ms\bin\Debug\net6.0\runtimes\win\native\snappy32.dll
+C:\Users\juand\Documents\Semestre 6\Arquitectura\Meddit_LDCS_ms\bin\Debug\net6.0\runtimes\win\native\snappy64.dll
+C:\Users\juand\Documents\Semestre 6\Arquitectura\Meddit_LDCS_ms\bin\Debug\net6.0\runtimes\linux\native\libmongocrypt.so
+C:\Users\juand\Documents\Semestre 6\Arquitectura\Meddit_LDCS_ms\bin\Debug\net6.0\runtimes\osx\native\libmongocrypt.dylib
+C:\Users\juand\Documents\Semestre 6\Arquitectura\Meddit_LDCS_ms\bin\Debug\net6.0\runtimes\win\native\mongocrypt.dll
+C:\Users\juand\Documents\Semestre 6\Arquitectura\Meddit_LDCS_ms\obj\Debug\net6.0\Meddit_LDCS_ms.csproj.AssemblyReference.cache
+C:\Users\juand\Documents\Semestre 6\Arquitectura\Meddit_LDCS_ms\obj\Debug\net6.0\Meddit_LDCS_ms.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\juand\Documents\Semestre 6\Arquitectura\Meddit_LDCS_ms\obj\Debug\net6.0\Meddit_LDCS_ms.AssemblyInfoInputs.cache
+C:\Users\juand\Documents\Semestre 6\Arquitectura\Meddit_LDCS_ms\obj\Debug\net6.0\Meddit_LDCS_ms.AssemblyInfo.cs
+C:\Users\juand\Documents\Semestre 6\Arquitectura\Meddit_LDCS_ms\obj\Debug\net6.0\Meddit_LDCS_ms.csproj.CoreCompileInputs.cache
+C:\Users\juand\Documents\Semestre 6\Arquitectura\Meddit_LDCS_ms\obj\Debug\net6.0\Meddit_LDCS_ms.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\juand\Documents\Semestre 6\Arquitectura\Meddit_LDCS_ms\obj\Debug\net6.0\Meddit_LDCS_ms.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\juand\Documents\Semestre 6\Arquitectura\Meddit_LDCS_ms\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\juand\Documents\Semestre 6\Arquitectura\Meddit_LDCS_ms\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\juand\Documents\Semestre 6\Arquitectura\Meddit_LDCS_ms\obj\Debug\net6.0\scopedcss\bundle\Meddit_LDCS_ms.styles.css
+C:\Users\juand\Documents\Semestre 6\Arquitectura\Meddit_LDCS_ms\obj\Debug\net6.0\Meddit_LDCS_ms.csproj.CopyComplete
+C:\Users\juand\Documents\Semestre 6\Arquitectura\Meddit_LDCS_ms\obj\Debug\net6.0\Meddit_LDCS_ms.dll
+C:\Users\juand\Documents\Semestre 6\Arquitectura\Meddit_LDCS_ms\obj\Debug\net6.0\refint\Meddit_LDCS_ms.dll
+C:\Users\juand\Documents\Semestre 6\Arquitectura\Meddit_LDCS_ms\obj\Debug\net6.0\Meddit_LDCS_ms.pdb
+C:\Users\juand\Documents\Semestre 6\Arquitectura\Meddit_LDCS_ms\obj\Debug\net6.0\Meddit_LDCS_ms.genruntimeconfig.cache
+C:\Users\juand\Documents\Semestre 6\Arquitectura\Meddit_LDCS_ms\obj\Debug\net6.0\ref\Meddit_LDCS_ms.dll
