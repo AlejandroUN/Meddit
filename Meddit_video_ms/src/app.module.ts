@@ -4,7 +4,7 @@ import { MongooseModule } from '@nestjs/mongoose';
 
 @Module({
   imports: [ 
-    MongooseModule.forRoot('mongodb://root:example@127.0.0.1:27017', { dbName: 'meddit_video_db' }),
+    MongooseModule.forRoot('mongodb://root:example@172.17.0.2:27017', { dbName: 'meddit_video_db' }),
     VideoModule
   ],
 })
