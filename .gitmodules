@@ -1,0 +1,3 @@
+[submodule "Meddit_auth_ms"]
+	path = Meddit_auth_ms
+	url = https://github.com/AlejandroUN/todo
