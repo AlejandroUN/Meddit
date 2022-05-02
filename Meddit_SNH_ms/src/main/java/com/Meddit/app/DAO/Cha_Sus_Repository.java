@@ -11,6 +11,8 @@ import com.Meddit.app.entitiy.Channel_suscription;
 
 @Repository
 public interface Cha_Sus_Repository extends JpaRepository<Channel_suscription, Long>{
-	@Query(value = "SELECT * FROM channel_suscriptions WERE id_user = :user", nativeQuery = true)
-	List<Channel_suscription> findByid_user(@Param("user") long id);
+	//List<Channel_suscription> findById_user(long id_user);
+	
+	@Query(value = "SELECT ch FROM Channel_suscription ch WHERE ch.id_user LIKE :user")
+	List<Channel_suscription> findById_user(@Param("user") long filtro);
 }

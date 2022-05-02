@@ -11,6 +11,6 @@ import com.Meddit.app.entitiy.Community_suscription;
 
 @Repository
 public interface Com_Sus_Repository extends JpaRepository<Community_suscription, Long>{
-	@Query(value = "SELECT * FROM community_suscriptions WERE id_user = :user", nativeQuery = true)
-	List<Community_suscription> findByid_user(@Param("user") long id);
+	@Query(value = "SELECT co FROM Community_suscription co WHERE co.id_user LIKE :user")
+	List<Community_suscription> findById_user(@Param("user") long id);
 }

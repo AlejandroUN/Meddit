@@ -43,6 +43,6 @@ public class Com_Service {
 	
 	@Transactional
 	public Iterable<Community_suscription> findByUser(long id_user) {
-		return ComsusRepository.findByid_user(id_user);
+		return ComsusRepository.findById_user(id_user);
 	}
 }

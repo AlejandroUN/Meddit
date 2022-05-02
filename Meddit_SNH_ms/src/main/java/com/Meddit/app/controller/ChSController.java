@@ -39,8 +39,8 @@ public class ChSController {
 	}
 	
 	//Get (By user id)
-	@GetMapping("/d/{id_user}")
-	public List<Channel_suscription> read (@PathVariable(value = "id_user") Long userId){
+	@RequestMapping("/byId/{userId}")
+	public List<Channel_suscription> read (@PathVariable(value = "userId") Long userId){
 		List<Channel_suscription> user_subscriptions = StreamSupport.stream(channelService.findByUser(userId).spliterator(), false).collect(Collectors.toList());
 		
 		return user_subscriptions;

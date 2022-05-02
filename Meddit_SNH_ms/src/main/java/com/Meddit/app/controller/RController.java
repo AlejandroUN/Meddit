@@ -31,8 +31,8 @@ public class RController {
 	}
 	
 	//Get (By user id)
-	@GetMapping("/d/{id_user}")
-	public List<Record> read (@PathVariable(value = "id_user") Long userId){
+	@GetMapping("/byId/{userId}")
+	public List<Record> read (@PathVariable(value = "userId") Long userId){
 		List<Record> user_record = StreamSupport.stream(recordService.findByUser(userId).spliterator(), false).collect(Collectors.toList());
 			
 		return user_record;

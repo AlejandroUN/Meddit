@@ -11,6 +11,6 @@ import com.Meddit.app.entitiy.Record;
 
 @Repository
 public interface RecordRepository extends JpaRepository<Record, Long>{
-	@Query(value = "SELECT * FROM records WERE id_user = :user", nativeQuery = true)
-	List<Record> findByid_user(@Param("user") long id);
+	@Query(value = "SELECT r FROM Record r WHERE r.id_user LIKE :user")
+	List<Record> findById_user(@Param("user") long id);
 }

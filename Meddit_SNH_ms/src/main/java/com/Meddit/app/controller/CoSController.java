@@ -39,8 +39,8 @@ public class CoSController {
 	}
 	
 	//Get (By user id)
-	@GetMapping("/d/{id_user}")
-	public List<Community_suscription> read (@PathVariable(value = "id_user") Long userId){
+	@RequestMapping("/byId/{userId}")
+	public List<Community_suscription> read (@PathVariable(value = "userId") Long userId){
 		List<Community_suscription> user_subscriptions = StreamSupport.stream(communityService.findByUser(userId).spliterator(), false).collect(Collectors.toList());
 		
 		return user_subscriptions;

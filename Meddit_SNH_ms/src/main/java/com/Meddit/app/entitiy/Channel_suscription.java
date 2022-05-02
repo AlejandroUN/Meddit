@@ -25,6 +25,7 @@ public class Channel_suscription implements Serializable{
 	@Column(name="id_user")
 	private long id_user;
 	
+	@Column(name="id_channel")
 	private long id_channel;
 
 	public long getId() {

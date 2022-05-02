@@ -44,6 +44,6 @@ public class Record_Service {
 	
 	@Transactional
 	public Iterable<Record> findByUser(long id_user) {
-		return recordRepository.findByid_user(id_user);
+		return recordRepository.findById_user(id_user);
 	}
 }

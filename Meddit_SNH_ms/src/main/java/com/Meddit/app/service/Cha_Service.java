@@ -43,8 +43,11 @@ public class Cha_Service {
 		ChasusRepository.deleteById(id);
 	}
 	
+	
 	@Transactional
 	public List<Channel_suscription> findByUser(long id_user) {
-		return ChasusRepository.findByid_user(id_user);
+		return ChasusRepository.findById_user(id_user);
 	}
+	
+	
 }
