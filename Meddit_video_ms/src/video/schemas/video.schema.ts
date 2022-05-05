@@ -17,7 +17,7 @@ export class Video {
   name: string;
 
   @Prop({ required: false })
-  Description: String;
+  description: String;
 
   @Prop({ required: false, default: 0 })
   likes: number;
@@ -29,7 +29,7 @@ export class Video {
   views: number;
 
   @Prop({ required: false, default: 0 })
-  path: string;
+  extension: string;
 
 }
 

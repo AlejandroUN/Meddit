@@ -10,7 +10,7 @@ export class VideoService {
   constructor(@InjectModel(Video.name) private videoModel: Model<VideoDocument>) {}
 
   async createVideo(videoInfo: CreateVideoDto): Promise<Video>{
-    const createdVideo = await  this.videoModel.create(videoInfo);
+    const createdVideo = await this.videoModel.create(videoInfo);
     return createdVideo;
   }
 

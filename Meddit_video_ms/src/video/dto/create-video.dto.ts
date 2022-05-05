@@ -3,5 +3,5 @@ export class CreateVideoDto {
   readonly community: number;
   readonly name: string;
   readonly description: string;
-  path: string;
+  extension: string;
 }
