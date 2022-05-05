@@ -20,20 +20,33 @@ import {
 
 import commentResolvers from './meddit/comments/resolvers';
 
+
+import {
+	snhMutations,
+	snhQueries,
+	snhTypeDef
+} from './meddit/snh/typeDefs';
+
+import snhResolvers from './meddit/snh/resolvers';
+
 // merge the typeDefs
 const mergedTypeDefs = mergeSchemas(
 	[
 		'scalar JSON',
 		commentTypeDef,
-		comunityTypeDef
+		comunityTypeDef,
+		snhTypeDef
+		
 	],
 	[
 		commentQueries,
-		comunityQueries
+		comunityQueries,
+		snhQueries
 	],
 	[
 		commentMutations,
-		comunityMutations
+		comunityMutations,
+		snhMutations
 	]	
 );
 
@@ -43,6 +56,7 @@ export default makeExecutableSchema({
 	resolvers: merge(
 		{ JSON: GraphQLJSON }, // allows scalar JSON		
 		commentResolvers,
-		comunityResolvers
+		comunityResolvers,
+		snhResolvers
 	)
 });
