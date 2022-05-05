@@ -1,7 +1,0 @@
-FROM java:8-jdk-alpine
-
-WORKDIR COPY ./target/Meddit_SNH_ms-0.0.1-SNAPSHOT.jar /usr/app/
-
-RUN sh -c 'touch Meddit_SNH_ms-0.0.1-SNAPSHOT.jar'
-
-ENTRYPOINT ["java","-jar","Meddit_SNH_ms-0.0.1-SNAPSHOT.jar"]

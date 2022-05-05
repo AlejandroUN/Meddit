@@ -1,0 +1,11 @@
+Para la base de datos
+
+sudo docker build -t meddit_snh_db .
+sudo docker run -d -t -i -p 3306:3306 --name meddit_snh_db meddit_snh_db
+sudo docker run --name db_client -d --link meddit_snh_db:db -p 8081:80 phpmyadmin
+
+Para el microservicio
+
+https://www.youtube.com/watch?v=BIutm8Q8YFg&t=16s
+sudo docker build -t meddit_snh_ms .
+sudo docker run -p 8080:8080 -e DB_HOST=host.docker.internal -e DB_PORT=3306 -e DB_USER=Daniel -e DB_PASSWORD=2022 -e DB_NAME=meddit_snh_db -e URL=0.0.0.0:8080 -e PORT=8080 --add-host=host.docker.internal:host-gateway meddit_snh_ms
