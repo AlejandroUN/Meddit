@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/TheHome.vue'
 import iniciarSesion from '../views/iniciarSesion.vue'
+import crearCuenta from '../views/CrearCuenta.vue'
 
 const routes = [
     {
@@ -12,6 +13,11 @@ const routes = [
         path: '/iniciarSesion',
         name: 'iniciarSesion',
         component: iniciarSesion
+    },
+    {
+        path: '/crearCuenta',
+        name: 'crearCuenta',
+        component: crearCuenta
     },
 ]
 

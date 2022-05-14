@@ -1,38 +1,6 @@
 <template>
   <div class="container col-xl-12 col-xxl-8 py-3">
     <div class="row align-items-center g-lg-5">
-      <header class="font">
-        <img class="float-md-start" src="../assets/logo.png" height="50" />
-
-        <nav class="nav justify-content-center float-md-end">
-          
-          <a href="https://en.wikipedia.org/wiki/Myers%E2%80%93Briggs_Type_Indicator" class="margen_izquierda"
-            ><button
-              class="w-100 btn btn-lg btn-primary color_fuente color2 margen_izquierda"
-              type="submit"
-            >
-              Test MBTI
-            </button></a>
-
-          <a href="https://es.wikipedia.org/wiki/Modelo_de_los_cinco_grandes" class="margen_izquierda">
-          <button
-              class="w-100 btn btn-lg btn-primary color_fuente color2"
-              type="submit"
-            >
-              Test Big Five
-            </button></a>
-
-          <router-link to="/contacta"
-            ><button
-              class="w-100 btn btn-lg btn-primary color_fuente color2"
-              type="submit"
-            >
-              ¡Dónanos!
-            </button></router-link
-          >
-        </nav>
-      </header>
-
       <div class="col-lg-7 text-center text-lg-start">
         <div class="col-lg-10 fs-4 font">
           <p class="f_tamano">
@@ -67,13 +35,9 @@
   </div>
 </template>
 
-<script>
-
-</script>
+<script></script>
 
 <style>
-
-
 .color {
   background-color: #f08240 !important;
   border-color: #f08240 !important;
@@ -93,7 +57,7 @@
   text-align: justify;
 }
 
-.margen_izquierda{
+.margen_izquierda {
   padding-right: 5px !important;
 }
 </style>
