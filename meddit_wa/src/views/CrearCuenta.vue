@@ -1,4 +1,6 @@
 <template>
+  <div id="app">
+ <NavBar />
   <div class="container col-xl-12 col-xxl-8 py-3">
     <div
       class="modal modal-signin position-static d-block bg margen2"
@@ -106,9 +108,16 @@
       </div>
     </div>
   </div>
+  </div>
 </template>
 
-<script></script>
+<script>
+import NavBar from '../components/NavBar.vue'
+
+export default {
+  name: 'App',
+  components: { NavBar},}
+</script>
 
 <style scoped>
 .botoncito:hover {

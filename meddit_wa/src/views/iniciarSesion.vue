@@ -1,4 +1,6 @@
 <template>
+  <div id="app">
+   <NavBar />
   <div class="container col-xl-12 col-xxl-8 py-3">
     <div class="row align-items-center g-lg-5">
       <div
@@ -53,7 +55,7 @@
       </div>
     </div>
   </div>
-
+  </div>
   <!--
 
     <div id="app">
@@ -61,7 +63,12 @@
     </div>
     -->
 </template>
-<script></script>
+<script>
+import NavBar from '../components/NavBar.vue'
+export default {
+  name: 'App',
+  components: { NavBar},}
+</script>
 
 <style>
 .iniciar_sesion_blue_container {
