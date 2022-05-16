@@ -125,9 +125,7 @@ export default {
   border-color: #008b8f !important;
 }
 
-* {
-  font-family: AvGard;
-}
+
 
 .botoncito {
   background-color: #f08240;

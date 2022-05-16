@@ -1,6 +1,8 @@
 <template>
   <div id="app">
+    
     <router-view />
+    
     <AppFooter />
   </div>
 </template>
@@ -9,9 +11,14 @@
 import AppFooter from './components/AppFooter.vue'
 
 
+
 export default {
-    components: { AppFooter }
+    components: { AppFooter },
+  
+
 }
+
+
 </script>
 
 
