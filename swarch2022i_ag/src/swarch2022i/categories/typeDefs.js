@@ -1,19 +1,32 @@
 export const categoryTypeDef = `
   type User {
+	  id: Int!
 	  username: String!
 	  userpassword: String!
+	  privacy: String!
+	  history: [String]!
+	  notifications: [String]!
   }
-  input UserInput {
-	  username: String!
-	  userpassword: String!
+  input RegisterInput {
+	email: String!
+	password: String!
+	username: String!
+  }
+  input LoginInput {
+	email: String!
+	password: String!
+  }
+  input EmailInput {
+	email: String!
   }`;
 
 export const categoryQueries = `
-	allUsers: [User]!
-	categoryById(id: Int!): User!
+	userByemail(email: EmailInput!): User!
   `;
 
 export const categoryMutations = `
-    createUser(user: UserInput!): Boolean!
-    loginUser(user: UserInput!): Boolean!
+    createUser(user: RegisterInput!): String!
+    loginUser(user: LoginInput!): User!
+    history(email: String!): String!
+    notifications(email: String!): String!
 `;
