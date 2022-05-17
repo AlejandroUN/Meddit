@@ -29,24 +29,35 @@ import {
 
 import snhResolvers from './meddit/snh/resolvers';
 
+
+
+import{
+	authenticationMutations,
+	authenticationQueries,
+	authenticationTypeDef
+}from './meddit/authentication/typeDefs';
+import authenticationResolvers from './meddit/authentication/resolvers';
 // merge the typeDefs
 const mergedTypeDefs = mergeSchemas(
 	[
 		'scalar JSON',
 		commentTypeDef,
 		comunityTypeDef,
-		snhTypeDef
+		snhTypeDef,
+		authenticationTypeDef
 		
 	],
 	[
 		commentQueries,
 		comunityQueries,
-		snhQueries
+		snhQueries,
+		authenticationQueries
 	],
 	[
 		commentMutations,
 		comunityMutations,
-		snhMutations
+		snhMutations,
+		authenticationMutations
 	]	
 );
 
@@ -57,6 +68,7 @@ export default makeExecutableSchema({
 		{ JSON: GraphQLJSON }, // allows scalar JSON		
 		commentResolvers,
 		comunityResolvers,
-		snhResolvers
+		snhResolvers,
+		authenticationResolvers
 	)
 });
