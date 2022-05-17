@@ -1,24 +1,31 @@
 <template>
   <div id="app">
     <NavBarComunidades />
-  <div class="container col-xl-12 col-xxl-8 py-3">
-    <div class="row mt-1">
-            <table class="table table-boarded">
-                <thead>
-                    <tr>
-                        <th scope="col">Id</th>
-                        <th scope="col">Description</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    
-                    <tr v-for="category in allComunities" :key="category.id">
-                        <td>{{category.id}}</td>
-                        <td>{{category.name}}</td>
-                    </tr>
-                </tbody>
-            </table>
+  <div class="container mt-4">
+    <form class="col-lg-6 offset-lg-3">
+        <div class="row text-center">
+            <h4>Crear Comunidad</h4>
         </div>
+        <input
+            class="form-control mt-4"
+            type="text"
+            v-model="comunity.name"
+            placeholder="Ingresa el nombre de la comunidad"
+        />
+        <input
+            class="form-control mt-4"
+            type="text"
+            v-model="comunity.description"
+            placeholder="Ingresa la descripción de la comunidad"
+        />
+        <button
+            class="btn btn-outline-primary offset-5 mt-4 justify-content-center"
+            type="button"
+            @click="addComunidad()"
+        >
+        Crear
+        </button>
+    </form>
   </div>
   </div>
 </template>
@@ -27,18 +34,45 @@
 
 import NavBarComunidades from '../components/NavBarComunidades.vue'
 import gql from 'graphql-tag'
+
+
 export default {
   name: 'App',
   components: {NavBarComunidades},
-  apollo: {
-      
-      allComunities: gql`query {
-  allComunities{
-    id
-    name
-  }
-}`,
-    },
-  
+  data(){
+      return{
+        comunity:{
+            name:"",
+            description:"",
+            creatorId:5
+        }
+      }
+  },
+  methods:{
+      addComunidad(){
+          
+          this.$apollo.mutate({
+            mutation:gql`
+                mutation($comunity:ComunityInput!)
+                    {createComunity(comunity:$comunity)
+                        {
+                        id
+                        name
+                        }
+                    }
+                `,
+            variables:{
+                    comunity:this.comunity
+                
+            },
+
+            
+            
+
+               
+          });
+          alert("Comunidad creada");
+      },
+  },
 }
 </script>

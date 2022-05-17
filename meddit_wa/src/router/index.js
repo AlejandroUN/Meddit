@@ -6,6 +6,7 @@ import Comunidades from '../views/Comunidades.vue'
 import CrearComunidad from '../views/CrearComunidad.vue'
 import EditarComunidad from '../views/EditarComunidad.vue'
 import EliminarComunidad from '../views/EliminarComunidad.vue'
+import ComunidadMenu from'../views/ComunidadMenu.vue'
 
 const routes = [
     {
@@ -43,6 +44,12 @@ const routes = [
         name: 'EliminarComunidad',
         component: EliminarComunidad
     },
+    {
+        path:'/Comunidad/:id/Menu',
+        name: 'ComunidadMenu',
+        component:ComunidadMenu,
+        props: true
+    }
 
 ]
 

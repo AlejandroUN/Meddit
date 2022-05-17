@@ -15,6 +15,7 @@
                     <tr v-for="category in allComunities" :key="category.id">
                         <td>{{category.id}}</td>
                         <td>{{category.name}}</td>
+                        <td><router-link :to="'/Comunidad/'+category.id+'/Menu'"><button>Entrar</button></router-link></td>
                     </tr>
                 </tbody>
             </table>
@@ -38,7 +39,9 @@ export default {
     name
   }
 }`,
+    
     },
+    
   
 }
 </script>

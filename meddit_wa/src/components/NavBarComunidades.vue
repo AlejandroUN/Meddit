@@ -24,13 +24,7 @@
             </button>
           </router-link>
         </li>
-        <li class="nav-item">
-          <router-link to="/EliminarComunidad">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-              Eliminar Comunidad
-            </button>
-          </router-link>
-        </li>
+        
       </ul>
     </div>
 
