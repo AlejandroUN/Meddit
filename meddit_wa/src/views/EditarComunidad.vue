@@ -16,8 +16,8 @@
                         <tr v-if="category.creatorId==creatorId">
                         <td>{{category.id}}</td>
                         <td>{{category.name}}</td>
-                        <td><button>Editar</button></td>
-                        <td><button>Eliminar</button></td>
+                        <td><router-link :to="'/EditarComunidad/'+category.id"><button>Editar</button></router-link></td>
+                        <td><button v-on:click="deleteComunity(category.id)">Eliminar</button></td>
                         </tr>
                     </div>
                 </tbody>
@@ -36,7 +36,7 @@ export default {
   components: {NavBarComunidades},
   data(){
       return{
-          creatorId:3,
+          creatorId:5,
       }
   },
   apollo: {
@@ -49,6 +49,28 @@ export default {
   }
 }`,
     },
+    methods:{
+        deleteComunity(idparam){
+        this.$apollo.mutate({
+            mutation:gql`
+                mutation($id:Int!){
+                    deleteComunity(id:$id)
+                    }
+                `,
+            variables:{
+                    id:idparam
+                
+            },
+
+            
+            
+
+               
+          });
+          alert("Comunidad borrada");
+          this.$router.push({ path: "/Comunidades" });
+        
+    }}
   
 }
 </script>

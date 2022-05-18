@@ -5,8 +5,9 @@ import crearCuenta from '../views/CrearCuenta.vue'
 import Comunidades from '../views/Comunidades.vue'
 import CrearComunidad from '../views/CrearComunidad.vue'
 import EditarComunidad from '../views/EditarComunidad.vue'
-import EliminarComunidad from '../views/EliminarComunidad.vue'
+import EditarComunidadId from '../views/EditarComunidadId.vue'
 import ComunidadMenu from'../views/ComunidadMenu.vue'
+import BuscarComunidades from '../views/BuscarComunidades.vue'
 
 const routes = [
     {
@@ -40,15 +41,23 @@ const routes = [
         component: EditarComunidad
     },
     {
-        path:'/EliminarComunidad',
-        name: 'EliminarComunidad',
-        component: EliminarComunidad
+        path:'/EditarComunidad/:id',
+        name: 'EditarComunidadId',
+        component: EditarComunidadId,
+        props: true
     },
     {
         path:'/Comunidad/:id/Menu',
         name: 'ComunidadMenu',
         component:ComunidadMenu,
         props: true
+    },
+    {   
+        path:'/Comunidades/:name',
+        name: 'BuscarComunidades',
+        component:BuscarComunidades,
+        props: true
+
     }
 
 ]

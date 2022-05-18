@@ -16,25 +16,15 @@
               <br />
               <h4 class="mb-3">Crear cuenta</h4>
               <div class="row g-3">
-                <div class="col-sm-12">
-                  <label class="form-label">Nombres y Apellidos</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="nombres"
-                    v-model="nombres"
-                    maxlength="50"
-                    placeholder="Nombres y Apellidos"
-                  />
-                </div>
+                
 
-                <div class="col-12">
+                <div class="col-sm-12">
                   <label class="form-label">Nombre de Usuario </label>
                   <input
                     type="text"
                     class="form-control"
-                    name="new_user"
-                    v-model="new_user"
+                    name="username"
+                    v-model="user.username"
                     placeholder="Nombre de Usuario"
                   />
                 </div>
@@ -45,7 +35,7 @@
                     type="email"
                     class="form-control"
                     name="email"
-                    v-model="email"
+                    v-model="user.email"
                     placeholder="you@example.com"
                   />
                 </div>
@@ -58,11 +48,11 @@
                     class="form-control col-12 col-sm-10 col-md-7"
                     type="password"
                     name="password"
-                    v-model="password"
+                    v-model="user.password"
                     placeholder="Contraseña"
                     minlength="8"
                     maxlength="20"
-                    v-on:keypress="isImprimible(event)"
+                    
                   />
                 </div>
 
@@ -76,11 +66,10 @@
                     name="cpassword"
                     placeholder="Confirmar Contraseña"
                     v-model="cPassword"
-                    v-on:keypress="isImprimible(event)"
                     required
                     :class="{
-                      'is-invalid': cPassword !== '' && cPassword !== password,
-                      'is-valid': cPassword !== '' && cPassword === password,
+                      'is-invalid': cPassword !== '' && cPassword !== user.password,
+                      'is-valid': cPassword !== '' && cPassword === user.password,
                     }"
                   />
                 </div>
@@ -89,7 +78,7 @@
                   class="mb-2 btn btn-sm rounded-4
                    floatr right boton_MEDDIT2"
                   type="submit"
-                  v-on:click="checked"
+                  v-on:click="createUser"
                 >
                   Crear
                 </button>
@@ -104,10 +93,44 @@
 
 <script>
 import NavBar from '../components/NavBar.vue'
-
+import gql from 'graphql-tag'
 export default {
   name: 'App',
-  components: { NavBar},}
+  components: { NavBar},
+  data(){
+    return{
+      user:{
+      email:"",
+      password:"",
+      username:""},
+      
+      cPassword:"",
+    }
+  },
+  methods:{
+      createUser(){
+          
+          this.$apollo.mutate({
+            mutation:gql`mutation($user:RegisterInput!)
+            {createUser(user:$user)}
+                `,
+            variables:{
+                    user:this.user
+                
+            },
+
+            
+            
+
+               
+          });
+          alert("Cuenta Creada");
+          this.$router.push({ path: "/" });
+      },
+  },
+  
+  
+  }
 </script>
 
 <style scoped>

@@ -4,7 +4,8 @@
   <div class="container mt-4">
     <form class="col-lg-6 offset-lg-3">
         <div class="row text-center">
-            <h4>Crear Comunidad</h4>
+            <h4>Editar Comunidad</h4>
+            {{idComunity}}
         </div>
         <input
             class="form-control mt-4"
@@ -21,9 +22,9 @@
         <button
             class="btn offset-5 mt-4 justify-content-center boton_MEDDIT2"
             type="button"
-            @click="addComunidad()"
+            v-on:click="editComunidad"
         >
-        Crear
+        Editar
         </button>
     </form>
   </div>
@@ -41,6 +42,7 @@ export default {
   components: {NavBarComunidades},
   data(){
       return{
+        idComunity:this.$route.params.id,
         comunity:{
             name:"",
             description:"",
@@ -49,19 +51,21 @@ export default {
       }
   },
   methods:{
-      addComunidad(){
+      editComunidad(){
           
           this.$apollo.mutate({
             mutation:gql`
-                mutation($comunity:ComunityInput!)
-                    {createComunity(comunity:$comunity)
-                        {
-                        id
-                        name
-                        }
+                mutation($id:Int!,$comunity:ComunityInput!){
+                    updateComunity(id:$id,comunity:$comunity)
+                    {
+                      id
+                      name
+                      description
+                    }
                     }
                 `,
             variables:{
+                    id:this.idComunity,
                     comunity:this.comunity
                 
             },
@@ -71,8 +75,9 @@ export default {
 
                
           });
-          alert("Comunidad creada");
-          this.$router.push({ path: "/Comunidades" });
+          alert("Comunidad editada");
+          this.$router.push({ path: "/EditarComunidad" });
+
       },
   },
 }

@@ -22,10 +22,11 @@
                   class="form-control"
                   id="floatingInput"
                   placeholder="name@example.com"
-                  v-model="email"
+                  v-model="user.email"
                 />
                 
               </div>
+            
 
               <div class="form-floating mb-3">
                 <label for="floatingPassword">Contraseña</label>
@@ -34,11 +35,11 @@
                   class="form-control"
                   id="floatingPassword"
                   placeholder="Password"
-                  v-model="password"
+                  v-model="user.password"
                 />
                 
               </div>
-
+              
               <button
                 class="mb-2 btn btn-sm rounded-4 floatr right boton_MEDDIT2"
                 type="submit"
@@ -68,13 +69,48 @@
 </template>
 <script>
 import NavBar from '../components/NavBar.vue'
+import gql from 'graphql-tag'
+
 export default {
   name: 'App',
   components: { NavBar},
+  data(){
+      return{
+          user:{
+            email:"",
+            password:"",
+          },
+          loginUser:[]
+      }
+  },
   methods:{
 
-    login (){
+    async login (){
+     
+       try{
+          this.$apollo.mutate({
+            mutation:gql`mutation
+            ($user:LoginInput!)
+            {loginUser(user:$user) {
+                  id
+                }}
+                `,
+            variables:{
+                    user:this.user
+                
+            },
+
+            
+            
+
+               
+          });
+         
+          
        this.$router.push({ path: "/Comunidades" });
+    }catch (error) {
+      alert(error)
+    }
     }
   }
   }

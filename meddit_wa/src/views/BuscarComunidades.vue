@@ -12,10 +12,13 @@
                 </thead>
                 <tbody>
                     
-                    <tr v-for="category in allComunities" :key="category.id">
+                    <div v-for="category in allComunities" :key="category.id">
+                        <tr v-if="category.name==nametoFind">
                         <td>{{category.id}}</td>
                         <td>{{category.name}}</td>
-                    </tr>
+                        <td><router-link :to="'/Comunidad/'+category.id+'/Menu'"><button>Entrar</button></router-link></td>
+                        </tr>
+                    </div>
                 </tbody>
             </table>
         </div>
@@ -38,7 +41,15 @@ export default {
     name
   }
 }`,
+    
     },
+    data(){
+      return{
+        nametoFind:this.$route.params.name,
+        
+      }
+  },
+    
   
 }
 </script>

@@ -33,22 +33,30 @@
     <form class="form-inline my-2 my-lg-0 ml-auto">
         <input
           class="form-control mr-sm-2"
-          type="search"
+          type="text"
           placeholder="Buscar Comunidad"
           aria-label="Buscar Comunidad"
+          v-model="name"
         />
+        <router-link :to="'/Comunidades/'+name">
         <button
           class="btn my-2 my-sm-0 float-lg-right boton_MEDDIT"
           type="submit"
         >
           Buscar 
         </button>
+        </router-link>
       </form>
   </nav>
 </template>
 
 <script>
-export default {};
+export default {
+   data(){
+     return{
+       name:""
+   }
+}};
 </script>
 
 <style></style>
