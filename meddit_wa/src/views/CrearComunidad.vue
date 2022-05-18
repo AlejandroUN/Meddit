@@ -19,7 +19,7 @@
             placeholder="Ingresa la descripción de la comunidad"
         />
         <button
-            class="btn btn-outline-primary offset-5 mt-4 justify-content-center"
+            class="btn offset-5 mt-4 justify-content-center boton_MEDDIT2"
             type="button"
             @click="addComunidad()"
         >

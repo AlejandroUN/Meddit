@@ -4,7 +4,7 @@
   <div class="container col-xl-12 col-xxl-8 py-3">
     <div class="row align-items-center g-lg-5">
       <div
-        class="modal modal-signin position-static d-block py-5 bg iniciar_sesion_blue_container"
+        class="modal modal-signin position-static d-block py-5 bg"
         tabindex="-1"
         role="dialog"
         id="modalSignin"
@@ -40,7 +40,7 @@
               </div>
 
               <button
-                class="mb-2 btn btn-sm rounded-4 btn-primary floatr right color"
+                class="mb-2 btn btn-sm rounded-4 floatr right boton_MEDDIT2"
                 type="submit"
                 v-on:click="login"
               >
@@ -85,6 +85,6 @@ export default {
   background-color: #008b8f !important;
 }
 .fondo3 {
-  background-color: #faefe8 !important;
+  background-color: #bd84e6  !important;
 }
 </style>

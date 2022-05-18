@@ -8,8 +8,8 @@
       role="dialog"
       id="modalSignin"
     >
-      <div class="modal-content rounded-5 shadow">
-        <main class="fondo3 abajo">
+      <div class="abajo">
+        <main>
           <div class="row g-5 contenedor">
             <div class="col-md-7 col-lg-6 offset-md-3">
               <br />
@@ -84,24 +84,15 @@
                     }"
                   />
                 </div>
-
-                <div>
-                  <form>
-                    <div><label>Fecha de nacimiento:</label></div>
-                    <div>
-                      <input type="date" :max="today" v-model="born" />
-                    </div>
-                  </form>
-                </div>
-
-                <button
-                  class="mb-2 btn btn-sm rounded-4 btn-primary floatr right color"
+              </div>
+              <button
+                  class="mb-2 btn btn-sm rounded-4
+                   floatr right boton_MEDDIT2"
                   type="submit"
                   v-on:click="checked"
                 >
                   Crear
                 </button>
-              </div>
             </div>
           </div>
         </main>
@@ -120,17 +111,6 @@ export default {
 </script>
 
 <style scoped>
-.botoncito:hover {
-  background-color: #008b8f !important;
-  border-color: #008b8f !important;
-}
-
-
-
-.botoncito {
-  background-color: #f08240;
-  border-color: aliceblue;
-}
 
 .abajo {
   padding-bottom: 4% !important;

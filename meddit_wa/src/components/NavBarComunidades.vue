@@ -1,25 +1,27 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <img src="../assets/logo.png" height="50" />
+    <router-link to="/">
+      <img src="../assets/logo.png" height="50" />
+    </router-link>
     <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
       <ul class="navbar-nav">
         <li class="nav-item">
           <router-link to="/Comunidades">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+            <button class="btn my-2 my-sm-0 boton_MEDDIT" type="submit">
               Comunidades
             </button>
           </router-link>
         </li>
         <li class="nav-item">
           <router-link to="/crearComunidad">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+            <button class="btn my-2 my-sm-0 boton_MEDDIT" type="submit">
               Crear Comunidad
             </button>
           </router-link>
         </li>
         <li class="nav-item">
           <router-link to="/EditarComunidad">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+            <button class="btn my-2 my-sm-0 boton_MEDDIT" type="submit">
               Editar Comunidad
             </button>
           </router-link>
@@ -36,7 +38,7 @@
           aria-label="Buscar Comunidad"
         />
         <button
-          class="btn btn-outline-success my-2 my-sm-0 float-lg-right"
+          class="btn my-2 my-sm-0 float-lg-right boton_MEDDIT"
           type="submit"
         >
           Buscar 
