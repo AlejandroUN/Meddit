@@ -47,7 +47,7 @@
               >
                 Entrar
               </button>
-              {{var}}
+              
               <!--<small class="text-muted"
                 ><router-link to="/recuperarContrasena"
                   >¿Has olvidado tu contraseña?</router-link
@@ -104,7 +104,6 @@ export default {
               
             },  
           }).then(r=>{
-            alert(r.data.loginUser.id);
             this.var=r.data.loginUser.id;
             this.$store.dispatch('setToken', r.data.loginUser.id);
             this.$store.dispatch('setUser',this.user)
