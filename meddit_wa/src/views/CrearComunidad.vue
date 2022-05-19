@@ -44,7 +44,7 @@ export default {
         comunity:{
             name:"",
             description:"",
-            creatorId:5
+            creatorId:this.$store.state.token,
         }
       }
   },

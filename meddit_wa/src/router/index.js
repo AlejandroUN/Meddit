@@ -12,11 +12,6 @@ import BuscarComunidades from '../views/BuscarComunidades.vue'
 const routes = [
     {
         path: '/',
-        name: 'Home',
-        component: Home
-    },
-    {
-        path: '/iniciarSesion',
         name: 'iniciarSesion',
         component: iniciarSesion
     },

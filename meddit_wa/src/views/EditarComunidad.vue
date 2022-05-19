@@ -25,18 +25,20 @@
         </div>
   </div>
   </div>
+
 </template>
 
 <script>
 
 import NavBarComunidades from '../components/NavBarComunidades.vue'
 import gql from 'graphql-tag'
+
 export default {
   name: 'App',
   components: {NavBarComunidades},
   data(){
       return{
-          creatorId:5,
+          creatorId:this.$store.state.token,
       }
   },
   apollo: {
@@ -67,10 +69,12 @@ export default {
 
                
           });
+          
           alert("Comunidad borrada");
           this.$router.push({ path: "/Comunidades" });
         
-    }}
+    }},
+    
   
 }
 </script>

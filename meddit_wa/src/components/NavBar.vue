@@ -5,13 +5,7 @@
     </router-link>
     <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
       <ul class="navbar-nav">
-        <li class="nav-item">
-          <router-link to="/">
-            <button class="btn my-2 my-sm-0 boton_MEDDIT" type="submit">
-              Inicio
-            </button>
-          </router-link>
-        </li>
+        
         <li class="nav-item">
           <router-link to="/crearCuenta">
             <button class="btn my-2 my-sm-0 boton_MEDDIT" type="submit">
@@ -20,7 +14,7 @@
           </router-link>
         </li>
         <li class="nav-item">
-          <router-link to="/IniciarSesion">
+          <router-link to="/">
             <button class="btn my-2 my-sm-0 boton_MEDDIT" type="submit">
               Acceder
             </button>
@@ -29,20 +23,7 @@
       </ul>
     </div>
 
-    <form class="form-inline my-2 my-lg-0 ml-auto">
-        <input
-          class="form-control mr-sm-2"
-          type="search"
-          placeholder="Buscar"
-          aria-label="Buscar"
-        />
-        <button
-          class="btn my-2 my-sm-0 float-lg-right boton_MEDDIT"
-          type="submit"
-        >
-          Buscar
-        </button>
-      </form>
+    
   </nav>
 </template>
 

@@ -43,10 +43,11 @@
               <button
                 class="mb-2 btn btn-sm rounded-4 floatr right boton_MEDDIT2"
                 type="submit"
-                v-on:click="login"
+                v-on:click="loginUser()"
               >
                 Entrar
               </button>
+              {{var}}
               <!--<small class="text-muted"
                 ><router-link to="/recuperarContrasena"
                   >¿Has olvidado tu contraseña?</router-link
@@ -70,24 +71,26 @@
 <script>
 import NavBar from '../components/NavBar.vue'
 import gql from 'graphql-tag'
+import { identifier, throwStatement } from '@babel/types';
 
 export default {
   name: 'App',
   components: { NavBar},
   data(){
       return{
+        var:0,
           user:{
             email:"",
             password:"",
           },
-          loginUser:[]
+          
       }
   },
   methods:{
 
-    async login (){
+    loginUser(){
      
-       try{
+       
           this.$apollo.mutate({
             mutation:gql`mutation
             ($user:LoginInput!)
@@ -96,21 +99,23 @@ export default {
                 }}
                 `,
             variables:{
-                    user:this.user
-                
-            },
-
             
-            
-
-               
-          });
-         
-          
-       this.$router.push({ path: "/Comunidades" });
-    }catch (error) {
-      alert(error)
-    }
+                user:this.user,
+              
+            },  
+          }).then(r=>{
+            alert(r.data.loginUser.id);
+            this.var=r.data.loginUser.id;
+            this.$store.dispatch('setToken', r.data.loginUser.id);
+            this.$store.dispatch('setUser',this.user)
+            if(this.var=!0){
+              this.$router.push({ path: "/Comunidades" });
+            }})
+          .catch(e=>alert("Error al iniciar sesión, intente de nuevo"))
+        
+      
+      
+        
     }
   }
   }

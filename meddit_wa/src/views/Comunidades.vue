@@ -7,7 +7,7 @@
                 <thead>
                     <tr>
                         <th scope="col">Id</th>
-                        <th scope="col">Description</th>
+                        <th scope="col">Nombre</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -34,13 +34,17 @@ export default {
   apollo: {
       
       allComunities: gql`query {
-  allComunities{
-    id
-    name
-  }
-}`,
+        allComunities{
+          id
+          name
+        }
+      }`,
     
     },
+
+    mounted(){
+      
+    }
     
   
 }

@@ -5,7 +5,6 @@
     <form class="col-lg-6 offset-lg-3">
         <div class="row text-center">
             <h4>Editar Comunidad</h4>
-            {{idComunity}}
         </div>
         <input
             class="form-control mt-4"
@@ -46,7 +45,7 @@ export default {
         comunity:{
             name:"",
             description:"",
-            creatorId:5
+            creatorId:this.$store.state.token,
         }
       }
   },
