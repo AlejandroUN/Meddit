@@ -5,7 +5,7 @@ import { createHttpLink } from '@apollo/client';
 
 
 const httpLink = createHttpLink({
-    uri: 'http://localhost:5000/graphql',
+    uri: 'https://meddit-ag-3fafemp3rq-uc.a.run.app/graphql',
   })
 
   const defaultOptions = {

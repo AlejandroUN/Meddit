@@ -1,7 +1,7 @@
 import { generalRequest, getRequest } from '../../utilities';
 import { url, port } from './server';
 
-const URL = `http://${url}:${port}`;
+const URL = `https://meddit-auth-3fafemp3rq-uc.a.run.app`;
 
 const resolvers = {
 	Query: {

@@ -1,3 +1,6 @@
+
+
+
 export const authenticationTypeDef = `
   type User {
 	  id: Int!
@@ -7,6 +10,10 @@ export const authenticationTypeDef = `
 	  history: [String]!
 	  notifications: [String]!
   }
+  type UserInfo {
+	user: User!
+	auth_token: String!
+  }
   input RegisterInput {
 	email: String!
 	password: String!
@@ -15,6 +22,7 @@ export const authenticationTypeDef = `
   input LoginInput {
 	email: String!
 	password: String!
+	password_confirmation: String!
   }
   input EmailInput {
 	email: String!
@@ -26,7 +34,7 @@ export const authenticationQueries = `
 
 export const authenticationMutations = `
     createUser(user: RegisterInput!): String!
-    loginUser(user: LoginInput!): User!
+    loginUser(user: LoginInput!): UserInfo!
     history(email: String!): String!
     notifications(email: String!): String!
 `;

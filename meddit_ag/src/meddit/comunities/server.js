@@ -1,3 +1,3 @@
-export const url = '172.17.0.3'
-export const port = '4000'
+export const url = 'meddit-comunity-ms-3fafemp3rq-uc.a.run.app'
+//export const port = '4000'
 export const entryPoint = 'comunity'
