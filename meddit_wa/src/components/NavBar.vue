@@ -5,7 +5,13 @@
     </router-link>
     <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
       <ul class="navbar-nav">
-        
+        <li class="nav-item">
+          <router-link to="/littleinterface">
+            <button class="btn my-2 my-sm-0 boton_MEDDIT" type="submit">
+              Little Interface
+            </button>
+          </router-link>
+        </li>
         <li class="nav-item">
           <router-link to="/crearCuenta">
             <button class="btn my-2 my-sm-0 boton_MEDDIT" type="submit">
