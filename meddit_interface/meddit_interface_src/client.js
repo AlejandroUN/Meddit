@@ -2,7 +2,7 @@
 import soap from 'soap';
 
 
-// const url = 'https://meddit-interface-3fafemp3rq-uc.a.run.app/wsdl?wsdl';
+//const url = 'https://meddit-interface-3fafemp3rq-uc.a.run.app/wsdl?wsdl';
 
 const url = 'https://gamestack-soap-e3wbalmwuq-uc.a.run.app/service/videogamesWSDL.wsdl'
 

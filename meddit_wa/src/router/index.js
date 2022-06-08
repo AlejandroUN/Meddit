@@ -5,7 +5,7 @@ import Comunidades from '../views/Comunidades.vue'
 import CrearComunidad from '../views/CrearComunidad.vue'
 import EditarComunidad from '../views/EditarComunidad.vue'
 import EditarComunidadId from '../views/EditarComunidadId.vue'
-import ComunidadMenu from'../views/ComunidadMenu.vue'
+import ComunidadMenu from '../views/ComunidadMenu.vue'
 import BuscarComunidades from '../views/BuscarComunidades.vue'
 import LittleInterface from '../views/LittleInterface.vue'
 
