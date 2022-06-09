@@ -45,7 +45,7 @@ export default {
         comunity:{
             name:"",
             description:"",
-            creatorId:this.$store.state.token,
+            creatorId:localStorage.getItem('id'),
         }
       }
   },
@@ -79,5 +79,11 @@ export default {
 
       },
   },
+  created(){
+    if(localStorage.getItem('id')==0){
+      this.alert("No estas loggeado")
+      this.$router.push({ path: "/" });
+    }
+  }
 }
 </script>

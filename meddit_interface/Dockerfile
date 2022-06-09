@@ -1,8 +1,8 @@
 FROM node:14.17.4-stretch
-RUN mkdir /lalu_soap
-COPY /lalu_soap_src /lalu_soap
+RUN mkdir /meddit_interface_src
+COPY /meddit_interface_src /meddit_interface
 
-WORKDIR /lalu_soap
+WORKDIR /meddit_interface
 RUN npm install
 EXPOSE 8000
 CMD ["npm", "run", "start"]

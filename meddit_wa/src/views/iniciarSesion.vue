@@ -36,6 +36,7 @@
                   id="floatingPassword"
                   placeholder="Password"
                   v-model="user.password"
+                  
                 />
                 
               </div>
@@ -59,6 +60,7 @@
         </div>
       </div>
     </div>
+    
   </div>
   </div>
   <!--
@@ -67,6 +69,7 @@
       
     </div>
     -->
+
 </template>
 <script>
 import NavBar from '../components/NavBar.vue'
@@ -82,6 +85,7 @@ export default {
           user:{
             email:"",
             password:"",
+            password_confirmation:"",
           },
           
       }
@@ -89,13 +93,16 @@ export default {
   methods:{
 
     loginUser(){
+            
+          this.user.password_confirmation=this.user.password;
      
        
           this.$apollo.mutate({
             mutation:gql`mutation
             ($user:LoginInput!)
             {loginUser(user:$user) {
-                  id
+                  auth_token,
+                  user{id}
                 }}
                 `,
             variables:{
@@ -104,9 +111,11 @@ export default {
               
             },  
           }).then(r=>{
-            this.var=r.data.loginUser.id;
-            this.$store.dispatch('setToken', r.data.loginUser.id);
-            this.$store.dispatch('setUser',this.user)
+            
+            console.log(r)
+            localStorage.setItem('token',r.data.loginUser.auth_token)
+            localStorage.setItem('id',r.data.loginUser.user.id)
+            
             if(this.var=!0){
               this.$router.push({ path: "/Comunidades" });
             }})
@@ -115,6 +124,12 @@ export default {
       
       
         
+    }
+  },
+  created(){
+    if(localStorage.getItem('token')!=null){
+
+      this.$router.push({ path: "/Comunidades" });
     }
   }
   }

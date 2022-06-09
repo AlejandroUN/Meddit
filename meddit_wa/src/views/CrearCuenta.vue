@@ -128,7 +128,12 @@ export default {
           this.$router.push({ path: "/" });
       },
   },
-  
+  created(){
+    if(localStorage.getItem('token')!=null){
+
+      this.$router.push({ path: "/Comunidades" });
+    }
+  }
   
   }
 </script>

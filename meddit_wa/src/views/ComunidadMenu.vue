@@ -43,5 +43,11 @@ export default {
       comunityById: [],
     };
   },
+   created(){
+    if(localStorage.getItem('token')==null){
+
+      this.$router.push({ path: "/" });
+    }
+  }
 };
 </script>

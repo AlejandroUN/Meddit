@@ -38,7 +38,7 @@ export default {
   components: {NavBarComunidades},
   data(){
       return{
-          creatorId:this.$store.state.token,
+          creatorId:localStorage.getItem('id'),
       }
   },
   apollo: {
@@ -74,7 +74,12 @@ export default {
           this.$router.push({ path: "/Comunidades" });
         
     }},
-    
+     created(){
+    if(localStorage.getItem('token')==null){
+
+      this.$router.push({ path: "/" });
+    }
+  }
   
 }
 </script>

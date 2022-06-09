@@ -46,6 +46,14 @@
           Buscar 
         </button>
         </router-link>
+
+        <button
+          class="btn my-2 my-sm-0 float-lg-right boton_MEDDIT"
+          type="submit"
+          @click="cerrarSesion"
+        >
+          Cerrar Sesion
+        </button>
       </form>
   </nav>
 </template>
@@ -56,7 +64,16 @@ export default {
      return{
        name:""
    }
-}};
+   
+  },
+  methods:{
+    cerrarSesion(){
+      localStorage.clear();
+      this.$router.push({ path: "/" });
+      
+    }
+
+   }};
 </script>
 
 <style></style>

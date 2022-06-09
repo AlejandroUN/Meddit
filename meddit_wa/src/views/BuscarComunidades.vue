@@ -50,5 +50,15 @@ export default {
       nametoFind: this.$route.params.name,
     };
   },
-};
+
+   created(){
+    if(localStorage.getItem('token')==null){
+
+      this.$router.push({ path: "/" });
+    }
+  }
+    
+  
+}
 </script>
+
