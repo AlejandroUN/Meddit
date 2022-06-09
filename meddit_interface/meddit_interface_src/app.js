@@ -1,11 +1,11 @@
-/*jslint node: true */
 "use strict";
 
 import soap from 'soap';
-import express from 'express';
+import express, { response } from 'express';
 import fs from 'fs';
-
+import axios from 'axios';
 import { request, gql } from 'graphql-request'
+import xmlParser from 'xml2json';
 
 const url = "https://meddit-ag-3fafemp3rq-uc.a.run.app/graphql";
 
@@ -44,9 +44,43 @@ var serviceObject = {
 const xml = fs.readFileSync('service.wsdl', 'utf8');
 const app = express();
 
+const removePrefix = function(objectArray) {
+    const newObjArray = objectArray.map( obj => {
+        var newObj = { };
+        const keys = Object.keys(obj);
+        for(let key of keys) {
+            newObj[key.split(":")[1]] = obj[key];
+        }
+        return newObj;
+    })
+    return newObjArray;
+}
+
 // root handler
-app.get('/', function(req, res) {
-    res.send('Node Soap Example!<br /><a href="/wsdl?wsdl">Wsdl endpoint</a>');
+app.get('/videoGames', function(req, res) {
+    const url = 'https://gamestack-soap-e3wbalmwuq-uc.a.run.app/service/videogamesWSDL.wsdl'
+    let xmls='\
+        <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:vid="http://www.gamestack.com/xml/videogames">\
+            <soapenv:Header/>\
+            <soapenv:Body>\
+                <vid:VideogameRequest/>\
+            </soapenv:Body>\
+        </soapenv:Envelope>';
+
+    axios.post(url, xmls, { headers: {'Content-Type': 'text/xml'}})
+        .then( response => { 
+            const jsonResponse = JSON.parse(xmlParser.toJson(response.data));
+            const parsedResponse = removePrefix(jsonResponse["SOAP-ENV:Envelope"]["SOAP-ENV:Body"]["ns2:VideogameResponse"]['ns2:fetched']);
+            console.log(parsedResponse)
+            return res.status(200).json(parsedResponse); 
+        })
+        .catch( err => { 
+            const errResponse = {
+                message: "Error consumiendo el servicio de video juegos",
+                err
+            }
+            return res.status(500).json(errResponse); 
+         });
 })
 
 // Launch the server and listen
