@@ -6,6 +6,7 @@ import fs from 'fs';
 import axios from 'axios';
 import { request, gql } from 'graphql-request'
 import xmlParser from 'xml2json';
+import cors from 'cors';
 
 const url = "https://meddit-ag-3fafemp3rq-uc.a.run.app/graphql";
 
@@ -43,6 +44,9 @@ var serviceObject = {
 
 const xml = fs.readFileSync('service.wsdl', 'utf8');
 const app = express();
+app.use(cors({
+    origin: '*'
+}))
 
 const removePrefix = function(objectArray) {
     const newObjArray = objectArray.map( obj => {
