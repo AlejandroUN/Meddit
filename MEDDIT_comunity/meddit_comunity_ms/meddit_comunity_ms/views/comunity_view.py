@@ -1,5 +1,6 @@
-from MEDDIT_Comunidades_ms.models.comunity_model import Comunity
-from MEDDIT_Comunidades_ms.serializers.comunity_serializer import ComunitySerializer
+from urllib import request
+from meddit_comunity_ms.models.comunity_model import Comunity
+from meddit_comunity_ms.serializers.comunity_serializer import ComunitySerializer
 from rest_framework import mixins
 from rest_framework import generics
 
@@ -15,6 +16,7 @@ class ComunityList(mixins.ListModelMixin,
 
     def post(self, request, *args, **kwargs):
         return self.create(request, *args, **kwargs)
+
 
 class ComunityDetail(mixins.RetrieveModelMixin,
                      mixins.UpdateModelMixin,

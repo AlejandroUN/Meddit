@@ -10,4 +10,4 @@ class Comunity(models.Model):
 
 
     class Meta:
-        app_label = 'MEDDIT_Comunidades_ms'
+        app_label = 'meddit_comunity_ms'

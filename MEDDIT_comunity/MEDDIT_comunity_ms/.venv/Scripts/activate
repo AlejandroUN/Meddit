@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\gaenr\Desktop\MEDDIT_Comunidades\MEDDIT_Comunidades_ms\.venv"
+VIRTUAL_ENV="C:\Users\gaenr\Desktop\meddit_comunity_ms\meddit_comunity_ms\.venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

@@ -1,0 +1,1 @@
+from .comunity_serializer import ComunitySerializer
